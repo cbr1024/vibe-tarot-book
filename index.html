@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>바이브코딩 입문 v2 — 미리보기</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@5.5.0/github-markdown.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">바이브코딩 입문 v2 — 미리보기</h1>
+</header>
+<!-- p1 — Unit A-1: 표지 -->
+<h1 id="보면서-따라-하는-바이브코딩-입문">보면서 따라 하는 바이브코딩
+입문</h1>
+<h2 id="ai-타로-결과-사이트-만들기">AI 타로 결과 사이트 만들기</h2>
+<p>HTML</p>
+<hr />
+<ul>
+<li>코드 없이 말로 만듭니다</li>
+<li>모바일 타로를 배포합니다</li>
+</ul>
+<hr />
+<p>저자 {저자명} / 출판 {출판사명}</p>
+<hr />
+<!-- p2 — Unit A-2: 목차 (1/2) -->
+<h1 id="목차">목차</h1>
+<h2 id="표지목차-p13">표지·목차 ······ p1~3</h2>
+<h2 id="chapter-1.-ai바이브코딩chatgpt-p412">Chapter 1.
+AI·바이브코딩·ChatGPT ······ p4~12</h2>
+<h3 id="chatgpt-사용법-p611">ChatGPT 사용법 ······ p6~11</h3>
+<h3 id="htmlcssjs-기초-p12">HTML·CSS·JS 기초 ······ p12</h3>
+<h2 id="chapter-2.-타로-사이트-만들기-p1481">Chapter 2. 타로 사이트
+만들기 ······ p14~81</h2>
+<h3 id="카드-p1427">카드 ······ p14~27</h3>
+<h3 id="화면-설계-p2843">화면 설계 ······ p28~43</h3>
+<h3 id="리딩저장공유-p4467">리딩·저장·공유 ······ p44~67</h3>
+<h3 id="배포-p6881">배포 ······ p68~81</h3>
+<!-- p3 — Unit A-2: 목차 (2/2) -->
+<h2 id="부록-a.-다음-단계-안내-p8284">부록 A. 다음 단계 안내 ······
+p82~84</h2>
+<h3 id="자산-저장소-다시-보기-p82">자산 저장소 다시 보기 ······ p82</h3>
+<h3 id="참고-사이트-영감-p83">참고 사이트 영감 ······ p83</h3>
+<h3 id="다음-책-예고와-마침-p84">다음 책 예고와 마침 ······ p84</h3>
+<!-- p4 — Unit B-0: Chapter 1 오프너 -->
+<h1 id="chapter-1.-ai-바이브코딩-chatgpt-기본-이해">Chapter 1. AI ·
+바이브코딩 · ChatGPT 기본 이해</h1>
+<p>재료는 셋입니다. <strong>AI, 바이브코딩, ChatGPT</strong> 입니다.</p>
+<p>다음 챕터에서 이 셋으로 타로 사이트를 만듭니다.</p>
+<!-- p4 — Unit B-1: 절 1 AI란 무엇인가 -->
+<h2 id="ai-란-무엇인가">1. AI 란 무엇인가</h2>
+<p>여기서 다루는 AI 는 <strong>한 줄로 부탁하면 초안을 그려 주는 견습
+일러스트레이터</strong> 입니다.</p>
+<p>흐름은 세 칸입니다. <strong>사람이 부탁 → AI 초안 → 사람이
+다듬기</strong>.</p>
+<figure>
+<img src="images/p004_ch1_sec1_ai_flow.png"
+alt="AI 작업 흐름 — 사람이 지시 → AI 초안 → 사람이 확인·수정" />
+<figcaption aria-hidden="true">AI 작업 흐름 — 사람이 지시 → AI 초안 →
+사람이 확인·수정</figcaption>
+</figure>
+<p>AI 는 도구입니다. 결정은 여러분이 합니다.</p>
+<!-- p5 — Unit B-2: 절 2 바이브코딩이란 무엇인가 -->
+<h2 id="바이브코딩이란-무엇인가">2. 바이브코딩이란 무엇인가</h2>
+<p>바이브코딩은 <strong>말로 부탁해 결과물을 받고, 마음에 들 때까지
+다듬는 방식</strong> 입니다.</p>
+<p>흐름은 여섯 칸입니다. <strong>아이디어 → 부탁 → AI 생성 → 확인 → 수정
+→ 완성</strong>.</p>
+<figure>
+<img src="images/p005_ch1_sec2_vibe_flow.png"
+alt="바이브코딩 6단계 흐름 — 한 바퀴 돌면 한 결과물" />
+<figcaption aria-hidden="true">바이브코딩 6단계 흐름 — 한 바퀴 돌면 한
+결과물</figcaption>
+</figure>
+<p>식당을 떠올려 주십시오. 손님은 칼을 들지 않습니다. 주문하면 셰프가 한
+그릇을 내옵니다. 간이 안 맞으면 다시 부탁하시면 됩니다.</p>
+<!-- p6 — Unit B-3-A: 절 3 ChatGPT 첫 화면 한눈에 -->
+<h2 id="chatgpt-화면-구성과-기능별-사용법">3. ChatGPT 화면 구성과 기능별
+사용법</h2>
+<p>ChatGPT 는 <strong>글로 부탁하면 글로 답해 주는 비서</strong> 한
+명입니다.</p>
+<h3 id="첫-화면-한눈">(1) 첫 화면 한눈</h3>
+<p>볼 자리는 두 곳입니다. <strong>왼쪽 사이드바</strong>와
+<strong>가운데 대화창</strong> 입니다.</p>
+<p>사이드바는 지난 대화 보관함입니다. 대화창은 오늘 일을 부탁하는
+자리입니다.</p>
+<p>대화창 아래에 입력창이 있습니다. 입력창 왼쪽 끝에 작은 <strong>+
+단추</strong> 가 있습니다.</p>
+<figure>
+<img src="images/p006_ch1_sec3_overview.png"
+alt="ChatGPT 첫 화면 — 왼쪽 사이드바와 가운데 대화창" />
+<figcaption aria-hidden="true">ChatGPT 첫 화면 — 왼쪽 사이드바와 가운데
+대화창</figcaption>
+</figure>
+<!-- p7 — Unit B-3-B: 절 3 ① 사이드바 -->
+<h3 id="사이드바-대화-보관함">(2) 사이드바 — 대화 보관함</h3>
+<p><strong>새 채팅</strong> 은 새 책을 펴는 자리입니다. <strong>채팅
+검색</strong> 은 옛 책을 다시 꺼내는 자리입니다.</p>
+<p>결이 같은 작업은 한 채팅 안에서 이어 가십시오. 결이 다른 작업은 새
+채팅을 펴십시오.</p>
+<p>아래 <strong>프로젝트·Codex·더 보기</strong> 세 항목은 거의 안
+씁니다.</p>
+<figure>
+<img src="images/p007_ch1_sec3_sidebar.png"
+alt="ChatGPT 사이드바 클로즈업 — 새 채팅·채팅 검색·프로젝트·Codex" />
+<figcaption aria-hidden="true">ChatGPT 사이드바 클로즈업 — 새 채팅·채팅
+검색·프로젝트·Codex</figcaption>
+</figure>
+<blockquote>
+<p><strong>[실무 팁]</strong> 따라가시는 동안에는 <strong>새 채팅 한
+곳만</strong> 쓰셔도 충분합니다.</p>
+</blockquote>
+<!-- p8 — Unit B-3-C: 절 3 ② 가운데 대화창 -->
+<h3 id="가운데-대화창-오늘-일하는-책상">(3) 가운데 대화창 — 오늘 일하는
+책상</h3>
+<p>처음 펴면 인사말과 입력창이 보입니다.</p>
+<p>입력창 아래에 <strong>지름길 단추 셋</strong> 이 있습니다. 이미지
+만들기·글쓰기·필요한 항목 찾기 입니다.</p>
+<p>입력창 오른쪽 끝에 아이콘 두 개가 있습니다. <strong>마이크</strong>
+는 목소리를 글로 적는 자리입니다. <strong>종이비행기</strong> 는 글을
+보내는 자리입니다.</p>
+<figure>
+<img src="images/p008_ch1_sec3_center.png"
+alt="ChatGPT 가운데 대화창 클로즈업 — 입력창과 액션 버튼·전송 자리" />
+<figcaption aria-hidden="true">ChatGPT 가운데 대화창 클로즈업 — 입력창과
+액션 버튼·전송 자리</figcaption>
+</figure>
+<!-- p9 — Unit B-3-D: 절 3 ③ + 메뉴 -->
+<h3 id="메뉴-도구-펼치기">(4) + 메뉴 — 도구 펼치기</h3>
+<p>입력창 왼쪽 <strong>+ 단추</strong> 를 눌러 주십시오. 위로 도구
+메뉴가 펼쳐집니다.</p>
+<p>손이 가는 자리는 두 개뿐입니다.</p>
+<ul>
+<li><strong>사진 및 파일 추가</strong> — 그림이나 문서를 보여 주는
+자리입니다.</li>
+<li><strong>이미지 만들기</strong> — 그림을 새로 받는 자리입니다.</li>
+</ul>
+<p>나머지 항목은 다루지 않습니다.</p>
+<figure>
+<img src="images/p009_ch1_sec3_plus_menu.png"
+alt="ChatGPT 입력창 + 메뉴 클로즈업 — 사진 및 파일 추가·이미지 만들기" />
+<figcaption aria-hidden="true">ChatGPT 입력창 + 메뉴 클로즈업 — 사진 및
+파일 추가·이미지 만들기</figcaption>
+</figure>
+<!-- p10 — Unit B-3-E: 절 3 자주 쓰는 자리 네 곳 -->
+<h3 id="자주-쓰는-자리-네-곳">(5) 자주 쓰는 자리 네 곳</h3>
+<p>손이 자주 가는 자리는 네 곳입니다.</p>
+<ol type="1">
+<li>사이드바의 <strong>새 채팅</strong></li>
+<li>입력창 왼쪽의 <strong>+ 메뉴</strong></li>
+<li><ul>
+<li>메뉴 안의 <strong>이미지 만들기</strong></li>
+</ul></li>
+<li>입력창 오른쪽의 <strong>종이비행기</strong></li>
+</ol>
+<blockquote>
+<p><strong>[확인]</strong> 이 네 자리만 익히시면 다음 챕터에 막힘이
+없습니다.</p>
+</blockquote>
+<!-- p10 — Unit B-3-F: 절 3 (6) 가입과 로그인 -->
+<h3 id="가입과-로그인-처음-오시는-분">(6) 가입과 로그인 — 처음 오시는
+분</h3>
+<p>ChatGPT 첫 화면입니다. 오른쪽 위 <strong>로그인</strong> 단추를 눌러
+주십시오.</p>
+<figure>
+<img src="images/p010_ch1_sec3_chatgpt_start.png"
+alt="ChatGPT 첫 진입 화면 — 우측 상단 로그인 단추" />
+<figcaption aria-hidden="true">ChatGPT 첫 진입 화면 — 우측 상단 로그인
+단추</figcaption>
+</figure>
+<p>처음 오시는 분은 <strong>로그인 → 회원 가입</strong> 으로
+들어가십시오. 이메일·비밀번호 두 칸을 채우고 <strong>계정
+만들기</strong> 를 누르시면 됩니다.</p>
+<figure>
+<img src="images/p011_ch1_sec3_chatgpt_signup_form.png"
+alt="ChatGPT 회원 가입 양식 — 이메일·비밀번호·이름 입력" />
+<figcaption aria-hidden="true">ChatGPT 회원 가입 양식 —
+이메일·비밀번호·이름 입력</figcaption>
+</figure>
+<p>이미 계정이 있으시면 같은 자리에서 로그인하시면 됩니다.</p>
+<figure>
+<img src="images/p011b_ch1_sec3_chatgpt_login_form.png"
+alt="ChatGPT 로그인 양식 — 이메일·비밀번호 두 칸" />
+<figcaption aria-hidden="true">ChatGPT 로그인 양식 — 이메일·비밀번호 두
+칸</figcaption>
+</figure>
+<!-- p12 — Unit B-4: 절 4 HTML·CSS·JavaScript -->
+<h2 id="뼈대-색모양-움직임-이-정도만">4. 뼈대 · 색·모양 · 움직임 — 이
+정도만</h2>
+<p>웹 사이트 한 채는 세 도구로 만들어집니다.</p>
+<p><strong>뼈대(HTML)</strong> — 화면의 틀을 세웁니다.
+<strong>색·모양(CSS)</strong> — 화면에 옷을 입힙니다.
+<strong>움직임(JavaScript)</strong> — 화면이 움직이게 합니다.</p>
+<figure>
+<img src="images/p012_ch1_sec4_html_css_js.png"
+alt="HTML · CSS · JavaScript 비유 — 뼈대·옷·움직임이 한 사람을 이룹니다" />
+<figcaption aria-hidden="true">HTML · CSS · JavaScript 비유 —
+뼈대·옷·움직임이 한 사람을 이룹니다</figcaption>
+</figure>
+<p>다음 챕터의 타로 사이트도 이 셋이 한 파일에 모입니다. 직접 다루실
+일은 없습니다.</p>
+<p><strong>뼈대·색·움직임</strong> 세 그림만 머릿속에 두십시오.</p>
+<blockquote>
+<p><strong>[실무 팁]</strong> 코드를 한 줄도 안 쓰셔도 됩니다. “한
+파일에 다 담아 주세요” 한 줄이면 셋이 알아서 자리 잡습니다.</p>
+</blockquote>
+<!-- p13 — Unit B-5: 도구 점검 — Chapter 2 시작 전 한 쪽 -->
+<h2 id="도구-점검-chapter-2-시작-전-한-쪽">5. 도구 점검 — Chapter 2 시작
+전 한 쪽</h2>
+<p>다음 챕터로 넘어가시기 전에 손에 든 도구 체크리스트 다섯 칸을 한 줄씩
+짚으십시오.</p>
+<ul>
+<li><strong>크롬(또는 엣지) 브라우저</strong> — 저장한 결과를
+더블클릭으로 열어 확인하는 창문입니다.</li>
+<li><strong>ChatGPT 계정</strong> — 자연어 부탁말을 받아 한 묶음으로
+답해 주는 비서입니다 (절 3 (6) 에서 만드십니다).</li>
+<li><strong>GitHub 계정</strong> — 손님이 휴대전화로 들어올 주소를 받아
+두는 우체국입니다 (절 8 에서 만드십니다).</li>
+<li><strong>카카오 디벨로퍼스(developers, 개발자) 계정</strong> —
+카카오톡 공유 단추 한 줄 키를 받는 자리입니다 (절 7 에서
+만드십니다).</li>
+<li><strong>메모장</strong> — ChatGPT 가 보내 준 한 묶음을 받아 한
+자리에 저장하는 종이입니다 (윈도우 기본 / 맥은 텍스트 편집기).</li>
+</ul>
+<p>다섯 칸이 손에 모이시면 다음 챕터로 넘어가십시오.</p>
+<!-- 이미지: p013_ch1_sec5_tools_checklist.png — 사장님 직접 영역(혹은 인포그래픽) -->
+<!-- Chapter 2 dogfood 역산 v2 draft (part1: 절 1~4) -->
+<h1 id="chapter-2.-ai-타로-결과-사이트-만들기">Chapter 2. AI 타로 결과
+사이트 만들기</h1>
+<!-- p14 — Unit A-0a: 절 1 오프너 — 두 갈래 길 -->
+<h2 id="이미지-생성-프롬프트로-타로-카드-만들기">1. 이미지 생성
+프롬프트로 타로 카드 만들기</h2>
+<p>타로 한 벌은 78장입니다. 손에 쥐는 길은 두 갈래입니다.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>길</th>
+<th>자리</th>
+<th>시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(가) 직접 만드는 길 (이 책 권장)</td>
+<td>ChatGPT 에 부탁말 한 묶음씩 받기</td>
+<td>두세 시간</td>
+</tr>
+<tr>
+<td>(나) 자산 저장소에서 받는 길 (시간이 급하실 때)</td>
+<td>ZIP 한 번에 79장 PNG</td>
+<td>5분</td>
+</tr>
+</tbody>
+</table>
+<p>자산 저장소 자리는 https://github.com/cbr1024/vibe-tarot-assets
+입니다. 이 책에서 사용한 카드 그림이 그대로 모여 있습니다.</p>
+<!-- 이미지: p014_ch2_sec1_two_paths.png — 사장님 직접 영역 -->
+<!-- p15 — Unit A-0b: 절 1 — 자산 저장소 다운로드 5단계 -->
+<h3 id="나-자산-저장소에서-받는-다섯-단계">(나) 자산 저장소에서 받는
+다섯 단계</h3>
+<ol type="1">
+<li>자산 저장소 자리(https://github.com/cbr1024/vibe-tarot-assets)를
+브라우저에서 여십시오.</li>
+<li>화면 오른쪽의 초록색 <strong>Code</strong> 단추를 누르십시오.</li>
+<li>펼쳐진 메뉴에서 <strong>Download ZIP</strong> 을 누르십시오.</li>
+<li>다운로드 폴더에 내려온 묶음 파일을 두 번 누르시면 자동으로
+풀립니다.</li>
+<li>풀린 폴더 안의 <strong>images</strong> 폴더를 여시면 카드 79장이 한
+자리에 모여 있습니다.</li>
+</ol>
+<!-- 이미지: p015_ch2_sec1_download_5steps.png — 사장님 직접 영역 -->
+<!-- p16 — Unit A-1: 절 1 (가) 직접 만드는 길 — 78장 전체 그림 -->
+<h3 id="가-직접-만드는-길-78장-한-가족-사진">(가) 직접 만드는 길 — 78장
+한 가족 사진</h3>
+<p>타로 한 벌은 78장입니다. 한 가족 사진 결로 묶여야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>식구</th>
+<th>장수</th>
+<th>결</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>메이저</td>
+<td>22장</td>
+<td>인생의 큰 장면</td>
+</tr>
+<tr>
+<td>컵</td>
+<td>14장</td>
+<td>마음·관계</td>
+</tr>
+<tr>
+<td>지팡이</td>
+<td>14장</td>
+<td>의지·움직임</td>
+</tr>
+<tr>
+<td>검</td>
+<td>14장</td>
+<td>생각·판단</td>
+</tr>
+<tr>
+<td>펜타클</td>
+<td>14장</td>
+<td>재물·일상</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td><strong>78장</strong></td>
+<td>한 벌</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>슈트(suit) 어휘</strong> — 한 벌 카드의 가족 단위입니다.
+메이저 22장과 마이너 56장 네 식구(컵·지팡이·검·펜타클)가 78장을
+이룹니다.</p>
+</blockquote>
+<p><strong>대표 다섯 장만</strong> 받으십시오. 나머지는 이름만 갈아
+끼우면 됩니다.</p>
+<!-- Unit A-2: 절 1 — 공통 스타일 한 줄 -->
+<h3 id="공통-스타일-한-줄로-못-박기">공통 스타일 한 줄로 못 박기</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>사용값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분위기</td>
+<td>빈티지·신비로움</td>
+</tr>
+<tr>
+<td>구도</td>
+<td>정면 대칭</td>
+</tr>
+<tr>
+<td>색감</td>
+<td>베이지·갈색 라인</td>
+</tr>
+<tr>
+<td>비율</td>
+<td>2:3</td>
+</tr>
+<tr>
+<td>스타일</td>
+<td>중세 일러스트</td>
+</tr>
+</tbody>
+</table>
+<p>사이트 배경은 검붉은 갈색입니다. 강조 색은 머스타드 골드입니다.</p>
+<pre class="prompt"><code>빈티지·신비로움(vintage mystic) 분위기의 타로 카드를 그려 주세요.
+정면 대칭 구도, 2:3 비율, 중세 일러스트 스타일로 통일합니다.
+배경은 베이지 종이 톤, 선과 음영은 따뜻한 갈색 라인 드로잉으로 부탁드립니다.
+카드 프레임 안에 인물과 상징물을 함께 배치해 주세요.
+[카드 이름과 핵심 상징은 다음 prompt 에서 채웁니다]</code></pre>
+<!-- Unit A-3: 절 1 — 카드 앞면·뒷면 -->
+<h3 id="앞면과-뒷면을-따로-받기">앞면과 뒷면을 따로 받기</h3>
+<p>카드 한 장은 그림 두 장입니다. 앞면과 엎어진 뒷면입니다.</p>
+<p>앞면 대표로 메이저 첫 장 “바보(The Fool)” 를 받으십시오.</p>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+카드 이름: 바보(The Fool).
+핵심 상징: 절벽 끝에 선 젊은이, 손에 든 작은 봇짐, 발치의 하얀 강아지.
+세 상징이 한 프레임 안에 정면으로 보이도록 배치해 주세요.</code></pre>
+<figure>
+<img src="images/p015_ch2_sec1_card_front_fool.png"
+alt="앞면 — 바보 결과 1장" />
+<figcaption aria-hidden="true">앞면 — 바보 결과 1장</figcaption>
+</figure>
+<p>뒷면은 대칭 패턴 한 장이면 됩니다.</p>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+인물과 풍경은 넣지 마세요.
+좌우·상하가 모두 대칭인 기하학적 장식 패턴으로만 채워 주세요.
+프레임 정중앙에 작은 ✦ 엠블럼 한 점만 놓아 주세요.</code></pre>
+<figure>
+<img src="images/p016_ch2_sec1_card_back_pattern.png"
+alt="뒷면 — 공용 패턴" />
+<figcaption aria-hidden="true">뒷면 — 공용 패턴</figcaption>
+</figure>
+<!-- Unit A-4: 절 1 — 마이너 슈트 4종 대표 카드 5장 -->
+<h3 id="슈트-네-가족과-메이저-한-장">슈트 네 가족과 메이저 한 장</h3>
+<table>
+<thead>
+<tr>
+<th>슈트</th>
+<th>대표 카드</th>
+<th>프레임</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>메이저</td>
+<td>바보</td>
+<td>골드</td>
+</tr>
+<tr>
+<td>컵</td>
+<td>컵 에이스</td>
+<td>장미 분홍</td>
+</tr>
+<tr>
+<td>지팡이</td>
+<td>지팡이 에이스</td>
+<td>따뜻한 갈색</td>
+</tr>
+<tr>
+<td>검</td>
+<td>검 에이스</td>
+<td>차가운 회청</td>
+</tr>
+<tr>
+<td>펜타클</td>
+<td>펜타클 에이스</td>
+<td>잎 녹색</td>
+</tr>
+</tbody>
+</table>
+<p>한 채팅창에서 한 장씩 받으십시오.</p>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+다음 다섯 장을 한 채팅창에서 한 장씩 차례로 출력해 주세요.
+1) 바보 — 절벽 끝 젊은이, 작은 봇짐, 하얀 강아지. 프레임 골드.
+2) 컵 에이스 — 잔에서 솟는 물줄기, 위로 내려오는 비둘기. 프레임 장미 분홍.
+3) 지팡이 에이스 — 새 잎 돋은 지팡이, 떠 있는 구름. 프레임 따뜻한 갈색.
+4) 검 에이스 — 왕관 쓴 검, 월계수 가지. 프레임 차가운 회청.
+5) 펜타클 에이스 — 별 무늬 동전, 너머의 정원. 프레임 잎 녹색.
+다섯 장 모두 본체 색감과 라인은 베이지·갈색 한 결로 통일해 주세요.</code></pre>
+<!-- Unit A-4b: 절 1 — 메이저 대표 추가 3장 -->
+<h3 id="메이저-대표-마법사연인세계">메이저 대표 — 마법사·연인·세계</h3>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+카드 이름: 마법사(The Magician).
+핵심 상징: 작업대 위 컵·동전·검·지팡이 네 도구, 머리 위 무한대(∞) 표시, 한 손 위 한 손 아래.
+주요 요소가 한 프레임 안에 정면으로 보이도록 배치해 주세요.</code></pre>
+<figure>
+<img src="images/p019_ch2_sec1_card_magician.png" alt="앞면 — 마법사" />
+<figcaption aria-hidden="true">앞면 — 마법사</figcaption>
+</figure>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+카드 이름: 연인(The Lovers).
+핵심 상징: 위에서 두 팔 벌린 천사, 아래 정면 남녀 두 사람, 왼쪽 사과나무에 뱀, 오른쪽 불꽃 나무.</code></pre>
+<figure>
+<img src="images/p020_ch2_sec1_card_lovers.png" alt="앞면 — 연인" />
+<figcaption aria-hidden="true">앞면 — 연인</figcaption>
+</figure>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+카드 이름: 세계(The World).
+핵심 상징: 큰 월계관 화환 안 천을 두른 무희, 화환 네 모서리에 사람·사자·소·독수리.</code></pre>
+<figure>
+<img src="images/p021_ch2_sec1_card_world.png" alt="앞면 — 세계" />
+<figcaption aria-hidden="true">앞면 — 세계</figcaption>
+</figure>
+<!-- Unit A-5: 절 1 — 78장 확장 템플릿 -->
+<h3 id="남은-73장을-받는-페이스">남은 73장을 받는 페이스</h3>
+<p>다섯 장씩 끊어 받으십시오. 이름과 핵심 상징만 갈아 끼우면 됩니다.</p>
+<pre class="prompt"><code>빈티지·신비로움 분위기, 정면 대칭, 2:3 비율, 베이지 종이 톤 + 갈색 라인 드로잉, 중세 일러스트.
+다음 다섯 장을 한 채팅창에서 한 장씩 차례대로 출력해 주세요.
+1) 카드 이름: ___ . 핵심 상징: ___, ___, ___. 프레임 색: ___.
+2) 카드 이름: ___ . 핵심 상징: ___, ___, ___. 프레임 색: ___.
+3) 카드 이름: ___ . 핵심 상징: ___, ___, ___. 프레임 색: ___.
+4) 카드 이름: ___ . 핵심 상징: ___, ___, ___. 프레임 색: ___.
+5) 카드 이름: ___ . 핵심 상징: ___, ___, ___. 프레임 색: ___.
+다섯 장 모두 카드 본체 색감과 라인은 베이지·갈색 한 결로 통일해 주세요.</code></pre>
+<!-- p25 — Unit A-6: 절 1 — 끊긴 응답 합치기 + 슈트 어휘 -->
+<h3 id="응답이-끊겼을-때-한-묶음으로-살리는-자리">응답이 끊겼을 때 한
+묶음으로 살리는 자리</h3>
+<p>다섯 장 받는 도중에 응답이 길어 중간에서 끊기는 자리가 나옵니다.
+입력창에 <strong>“계속”</strong> 한 단어만 보내시면 끊긴 자리에서 이어
+받으실 수 있습니다. 앞 응답 뒤에 이어 받은 글을 그대로 붙이시면 한
+묶음으로 살아납니다.</p>
+<blockquote>
+<p><strong>슈트(suit) 어휘</strong> — 한 벌 카드의 가족 단위입니다.
+컵·지팡이·검·펜타클 네 가족이 마이너 56장을 이룹니다.</p>
+</blockquote>
+<!-- p27 — Unit A-7: 절 1 끝 자가 점검 -->
+<blockquote>
+<p><strong>[절 1 끝 점검]</strong> 카드 78장 한 벌이 한 폴더에
+모이셨는지 짚으십시오. 모이지 않은 자리가 있으시면 같은 부탁말로 빠진
+카드만 다시 받으시면 됩니다.</p>
+</blockquote>
+<!-- Unit B-1: 절 2 — 부분 수정 prompt -->
+<h2 id="이미지-수정-프롬프트로-카드-퀄리티-다듬기">2. 이미지 수정
+프롬프트로 카드 퀄리티 다듬기</h2>
+<p>결이 어긋난 카드가 한두 장 섞여 나옵니다. <strong>마음에 드는 부분은
+그대로 둔다</strong> 한 줄을 부탁말에 박으십시오.</p>
+<p>손댈 칸은 한 번에 하나입니다. 색감 / 구도 / 디테일 / 통일성 가운데
+하나만 짚으십시오.</p>
+<pre class="prompt"><code>방금 받은 바보 카드에서 색감 한 칸만 다듬어 주세요.
+지금 베이지가 너무 노랗게 떠오릅니다. 조금 더 차분한 종이 톤(미색에 가까운 베이지)으로 바꿔 주세요.
+프레임 두께와 장식, 인물의 자세, 봇짐과 강아지 위치는 모두 그대로 유지해 주세요.</code></pre>
+<pre class="prompt"><code>방금 받은 묶음의 세 번째 카드(지팡이 에이스)에서 프레임 한 칸만 다듬어 주세요.
+같은 묶음의 다른 네 장과 비교해 보면 이 한 장만 테두리가 두껍게 나왔습니다.
+다른 네 장의 가는 갈색 라인 프레임 결에 맞추어 같은 두께로 다시 둘러 주세요.
+인물의 자세, 새 잎 돋은 지팡이와 구름, 베이지·갈색 색감은 모두 그대로 유지해 주세요.</code></pre>
+<p>유지할 자리는 빠짐없이, 손댈 자리는 한 칸만 — 이 둘이 수정 부탁말의
+골격입니다.</p>
+<!-- p30 — Unit C-0: 절 3 시작 — 메모장 한 파일 저장 6단계 -->
+<h2 id="화면-요구사항을-말로-설명해서-타로-사이트-만들기">3. 화면
+요구사항을 말로 설명해서 타로 사이트 만들기</h2>
+<h3 id="절-3-시작-메모장에-받은-코드를-한-파일로-저장하기">절 3 시작 —
+메모장에 받은 코드를 한 파일로 저장하기</h3>
+<p>이 절부터는 ChatGPT 에서 받으신 한 묶음 코드를 메모장에 옮겨 한
+파일로 저장하시게 됩니다. 저장 결이 어긋나면 더블클릭해도 사이트가
+열리지 않습니다. 아래 여섯 단계를 한 번에 짚으십시오.</p>
+<ol type="1">
+<li>메모장(노트패드)을 켭니다.</li>
+</ol>
+<!-- 이미지: p030a_ch2_sec3_memo_save_step1.png — 사장님 직접 영역 -->
+<ol start="2" type="1">
+<li>ChatGPT 응답 한 묶음을 통째 복사해 메모장 안에 붙여 넣습니다.</li>
+</ol>
+<!-- 이미지: p030b_ch2_sec3_memo_save_step2.png — 사장님 직접 영역 -->
+<ol start="3" type="1">
+<li>위 메뉴 「파일 → 다른 이름으로 저장」을 누릅니다.</li>
+</ol>
+<!-- 이미지: p030c_ch2_sec3_memo_save_step3.png — 사장님 직접 영역 -->
+<ol start="4" type="1">
+<li>「파일 형식」을 「모든 파일」로 바꿉니다.</li>
+</ol>
+<!-- 이미지: p030d_ch2_sec3_memo_save_step4.png — 사장님 직접 영역 -->
+<ol start="5" type="1">
+<li>파일 이름을 정확히 index.html 로 적습니다 (확장자가 .txt 가 아니라
+.html 이어야 더블클릭 시 브라우저가 엽니다).</li>
+</ol>
+<!-- 이미지: p030e_ch2_sec3_memo_save_step5.png — 사장님 직접 영역 -->
+<ol start="6" type="1">
+<li>저장 폴더를 정한 뒤 「저장」을 누릅니다.</li>
+</ol>
+<!-- 이미지: p030f_ch2_sec3_memo_save_step6.png — 사장님 직접 영역 -->
+<p>여기까지 마치시면 받으신 코드가 한 파일로 자리 잡습니다. 이후 절 3 의
+모든 자리는 같은 파일에 받으신 코드를 덮어쓰며 흐름이 이어집니다.</p>
+<!-- Unit C-1: 절 3 오프너 — SPA 4화면 흐름 -->
+<p>만들 사이트는 자리 네 개입니다. 한 페이지짜리 사이트입니다.</p>
+<table>
+<thead>
+<tr>
+<th>자리</th>
+<th>한 줄 주소</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>홈</td>
+<td>#/home</td>
+<td>주제 다섯 종 + 미리보기 한 장</td>
+</tr>
+<tr>
+<td>질문</td>
+<td>#/ask/{주제}</td>
+<td>궁금한 것 적기 + 예시 셋</td>
+</tr>
+<tr>
+<td>카드 뽑기</td>
+<td>#/spread/{주제}</td>
+<td>78장에서 세 장 뽑기</td>
+</tr>
+<tr>
+<td>결과</td>
+<td>#/result</td>
+<td>카드 셋 + 풀이</td>
+</tr>
+</tbody>
+</table>
+<p>네 자리를 하나씩 끊어 ChatGPT 에 받으십시오.</p>
+<!-- p31 — Unit C-1b: 절 3 — 해시 라우팅 한 단락 -->
+<h4 id="사이트-안-자리-이름은-뒤에-적힙니다">사이트 안 자리 이름은 #
+뒤에 적힙니다</h4>
+<h1
+id="은-도서관-한-건물-안-책장-번호와-같습니다.-건물사이트-한-동에-책장자리이-여러-칸-있습니다.-한-페이지짜리-사이트가-인터넷에-다시-부탁하지-않고도-손님-화면-안에서만-자리를-갈아끼우며-여러-화면을-보여드리는-결입니다.-자리-명패는-home들어가는-첫-자리-asklove질문-자리-spreadlove카드-펼치는-자리-result결과-자리-history이력-자리-결로-적힙니다.">은
+도서관 한 건물 안 책장 번호와 같습니다. 건물(사이트) 한 동에
+책장(자리)이 여러 칸 있습니다. 한 페이지짜리 사이트가 인터넷에 다시
+부탁하지 않고도 손님 화면 안에서만 자리를 갈아끼우며 여러 화면을
+보여드리는 결입니다. 자리 명패는 #/home(들어가는 첫 자리),
+#/ask/love(질문 자리), #/spread/love(카드 펼치는 자리), #/result(결과
+자리), #/history(이력 자리) 결로 적힙니다.</h1>
+<!-- Unit C-2: 절 3 — 홈 화면 prompt -->
+<h3 id="첫-자리-홈-화면-받기">첫 자리 — 홈 화면 받기</h3>
+<p>새 채팅창을 펴 주십시오.</p>
+<pre class="prompt"><code>모바일에서 잘 보이는 한 페이지짜리 타로 사이트의 홈 화면을 만들어 주세요.
+코드·CSS·자바스크립트·데이터 모두 한 파일에 담아서 한 묶음으로 주세요.
+주제 데이터·카드 78장 정보·풀 해석 데이터는 다음 자리에서 더 받습니다.
+상단 헤더: 좌측에 ✦ + &quot;VIBE TAROT&quot; 브랜드 텍스트.
+화면 가운데 H1: &quot;오늘의 타로&quot;.
+한 줄 안내: &quot;주제를 골라 보세요. 78장 풀 카드에서 세 장을 직접 뽑습니다.&quot;
+미리보기 박스: 카드 앞면 한 장(fool.png), 위에 작게 &quot;PREVIEW · 빈티지 베이지·갈색 라인 톤 — 앞면&quot;.
+다섯 종 주제 그리드(모바일 한 줄, 큰 화면 두 줄):
+연애운 ❀ / 금전운 ◈ / 직업운 ✦ / 인간관계 ✸ / 오늘의 운세 ☀.
+각 칸은 아이콘, 제목, 한 줄 요약 순.
+색감: 배경 검붉은 갈색, 강조 머스타드 골드, 글자 베이지. 카드 앞면 안쪽만 베이지 종이 톤.
+폰트: 제목 Times New Roman 계열 세리프, 본문 산세리프, 글자 간격 살짝 넓게.
+푸터: &quot;made with ChatGPT · vibe coding 입문서 예제&quot;.</code></pre>
+<p>프롬프트의 “세리프”는 글자 끝에 작은 가로 발이 달린 결, “산세리프”는
+발이 없는 결입니다.</p>
+<p>받은 코드를 메모장에 붙여 저장하십시오. 더블클릭하시면 화면이
+열립니다.</p>
+<figure>
+<img src="images/p028_ch2_sec3_home_screen.png" alt="홈 화면 첫 모습" />
+<figcaption aria-hidden="true">홈 화면 첫 모습</figcaption>
+</figure>
+<blockquote>
+<p>주제 칸이 비어 있어도 정상입니다. 데이터는 다음 자리에서
+받습니다.</p>
+</blockquote>
+<!-- Unit C-3: 절 3 — 5종 주제 데이터 분리 prompt -->
+<h3 id="메뉴판-한-장-따로-받기">메뉴판 한 장 따로 받기</h3>
+<pre class="prompt"><code>방금 받은 홈 화면 코드는 그대로 두고, 다섯 종 주제 데이터를
+같은 파일 안에 더해 주세요.
+주제 한 종마다 일곱 가지: 1) 영문 식별 이름(love / money / work / relation / today),
+2) 한국어 제목, 3) 아이콘 한 글자, 4) 한 줄 요약,
+5) 안내 문구 한 줄, 6) 예시 질문 세 개, 7) 자리 라벨 세 개와 한 줄 힌트.
+자리 라벨: 연애운 ❀ — 초반/중반/후반. 금전운 ◈ — 수입/지출/결과.
+직업운 ✦ — 현재/도전/결과. 인간관계 ✸ — 나/상대/관계. 오늘의 운세 ☀ — 과거/현재/흐름.
+홈 화면이 이 파일을 읽어 다섯 종 주제 그리드를 채우도록 연결해 주세요.</code></pre>
+<p>받은 코드로 메모장을 덮어쓰고 더블클릭하시면 주제 칸이
+채워집니다.</p>
+<figure>
+<img src="images/p030_ch2_sec3_home_with_data.png"
+alt="데이터 연결 후 홈 화면" />
+<figcaption aria-hidden="true">데이터 연결 후 홈 화면</figcaption>
+</figure>
+<!-- Unit C-4: 절 3 — 질문 화면 prompt -->
+<h3 id="두-번째-자리-질문-화면-받기">두 번째 자리 — 질문 화면 받기</h3>
+<pre class="prompt"><code>앞에서 받은 코드는 그대로 두고, 자리 한 개만 더해 주세요.
+홈에서 주제 칸을 누르면 명패가 #/ask/{주제 영문 이름}으로 바뀌면서 질문 자리가 열립니다.
+좌측 상단: 뒤로가기(←) + 주제 아이콘·제목.
+한 줄 안내: &quot;{한 줄 요약} 무엇이 궁금하신가요?&quot;
+세 줄 높이 글 입력 칸 한 개, 120자까지.
+안내 문구는 해당 주제 첫 예시 질문으로 자동 채워 주세요.
+&quot;자주 묻는 질문&quot; 묶음: 예시 질문 세 개를 작은 단추로. 단추를 누르면 입력 칸으로 옮겨집니다.
+맨 아래 &quot;카드 뽑으러 가기 →&quot; 단추.
+입력 칸이 비어 있으면 첫 예시 질문이 자동 사용됩니다.
+색감·폰트는 홈 화면과 같은 결로 통일.</code></pre>
+<figure>
+<img src="images/p032_ch2_sec3_ask_screen.png"
+alt="연애운으로 진입한 질문 화면" />
+<figcaption aria-hidden="true">연애운으로 진입한 질문 화면</figcaption>
+</figure>
+<!-- Unit C-5: 절 3 — 카드 뽑기 화면 prompt -->
+<h3 id="세-번째-자리-카드-뽑기-화면">세 번째 자리 — 카드 뽑기 화면</h3>
+<p>이 사이트의 심장입니다. 78장이 가로로 흩뿌려져 있습니다. 한 장을
+누르면 빈 자리로 날아가 뒷면이 앞면으로 회전합니다. 세 장이 모일 때까지
+반복됩니다.</p>
+<pre class="prompt"><code>앞에서 받은 코드는 그대로 두고, 카드 뽑기 자리 한 개만 더해 주세요.
+질문 자리에서 &quot;카드 뽑으러 가기&quot;를 누르면 명패가 #/spread/{주제 영문 이름}으로 바뀌며 열립니다.
+카드 정보는 다음 자리에서 받고, 지금 단계는 모두 뒷면 모양으로만.
+화면 진입 시 순서를 새로 섞고, 각 카드는 50% 확률로 정·역.
+화면 위쪽: 뒤로가기(←), 주제 아이콘·제목, &quot;1 / 3&quot; 진행 단계. 아래 박스에 손님 질문.
+가운데 빈 자리 셋(점선 테두리), 자리마다 이름과 한 줄 힌트.
+안내: &quot;{첫 자리 이름} 자리에 놓을 카드를 골라 주세요.&quot; 아래 &quot;🔀 카드 다시 섞기&quot; 단추.
+아래쪽에 78장 가로 부채꼴(fan), ±3° 회전, 가로 스크롤.
+한 장을 누르면 흩뿌림에서 흐려지고, 같은 카드가 위로 떠올라 첫 빈 자리로 0.7초 동안 날아가 닿는 순간 뒷면→앞면 회전.
+안내 문구는 다음 자리 이름으로 갱신. &quot;카드 다시 섞기&quot;는 안 뽑힌 카드만 섞습니다.
+세 장 모이면 1.2초 뒤 #/result 로 자동 이동. 모바일도 같은 동작.</code></pre>
+<p>코드가 잘려 돌아오면 <strong>“전체 파일을 한 덩어리로 다시
+주세요.”</strong> 라고 보내 주십시오.</p>
+<figure>
+<img src="images/p035_ch2_sec3_spread_fan.png" alt="카드 흩뿌림 화면" />
+<figcaption aria-hidden="true">카드 흩뿌림 화면</figcaption>
+</figure>
+<figure>
+<img src="images/p037_ch2_sec3_spread_flying.png"
+alt="카드 한 장이 자리로 날아가는 중간" />
+<figcaption aria-hidden="true">카드 한 장이 자리로 날아가는
+중간</figcaption>
+</figure>
+<figure>
+<img src="images/p038_ch2_sec3_spread_filled.png"
+alt="자리에 카드 한 장이 놓이고 안내가 갱신된 상태" />
+<figcaption aria-hidden="true">자리에 카드 한 장이 놓이고 안내가 갱신된
+상태</figcaption>
+</figure>
+<!-- Unit C-6: 절 3 — 78장 카드 데이터 분리 prompt -->
+<h3 id="카드-정보-한-장-따로-받기">카드 정보 한 장 따로 받기</h3>
+<pre class="prompt"><code>방금 받은 카드 뽑기 자리 코드는 그대로 두고, 78장 카드 정보를
+같은 파일 안에 더해 주세요.
+이 파일에는 일흔여덟 장 카드 정보가 차례로 담깁니다.
+카드 한 장의 정보는 여덟 가지: 1) 영문 식별 이름(소문자), 2) 영문 카드 이름,
+3) 한글 카드 이름, 4) 카드 번호, 5) 슈트 분류(major / cups / wands / swords / coins),
+6) 카드 그림 파일 경로(images/{영문 식별 이름}.png),
+7) 정방향 한 줄 메시지, 8) 역방향 한 줄 메시지.
+메이저 22장은 바보(0)부터 세계(XXI)까지 차례로 담아 주세요.
+마이너 56장은 네 슈트별 14장씩, 각 슈트마다 에이스(A) / 2 ~ 10 /
+시동(P) / 기사(K) / 여왕(Q) / 왕(KG) 순서로 담아 주세요.
+슈트별 톤은 컵 = 마음·물, 지팡이 = 의지·불, 검 = 생각·바람, 펜타클 = 현실·흙.
+정·역 한 줄 메시지는 &quot;오늘 하루를 따뜻하게 짚어 주는 한 문장&quot; 톤.
+카드 그림 파일이 없으면 카드 이름·번호·슈트 기호로 자동 대체해 주세요.
+카드 뽑기 자리가 이 파일을 읽어 채우도록 연결해 주세요.</code></pre>
+<p>프롬프트의 인물 카드 약어는 P(시동, Page), K(기사, Knight), Q(여왕,
+Queen), KG(왕, King) 결입니다.</p>
+<p>끊겨 돌아오면 <strong>“끊긴 자리에서 이어서 출력해 주세요”</strong>
+라고 보내 주십시오.</p>
+<p>받은 코드로 메모장을 덮어쓰면 78장이 자리 잡습니다.</p>
+<!-- p39 — Unit C-7: 절 3 끝 자가 점검 -->
+<blockquote>
+<p><strong>[절 3 끝 점검]</strong> 첫 화면이 휴대전화에서 떠올랐는지
+짚으십시오. 떠오르지 않으시면 저장하신 파일 확장자가 정확한지, 같은
+폴더에 받으신 파일이 다 모여 있는지 다시 살피십시오.</p>
+</blockquote>
+<!-- Unit D-1: 절 4 오프너 + 결과 화면 prompt -->
+<h2 id="조건을-넣어-타로-리딩-결과-만들기">4. 조건을 넣어 타로 리딩 결과
+만들기</h2>
+<p>결과는 네 층입니다.</p>
+<ol type="1">
+<li><strong>흐름</strong> 한 줄.</li>
+<li><strong>자리별 풀이</strong> 세 블록.</li>
+<li><strong>패턴 진단</strong> 한 줄.</li>
+<li><strong>자세한 풀이</strong> 다섯 문장.</li>
+</ol>
+<p>풀이는 정·역 조합 아홉 갈래 가운데 하나로 갈라집니다.</p>
+<pre class="prompt"><code>방금 만든 카드 뽑기 자리 코드는 그대로 두고, 결과 화면 한 개만 더해 주세요.
+세 자리에 카드 세 장이 모이면 #/result 로 바뀌며 결과 화면이 떠오릅니다.
+다섯 부분:
+1) 머리 줄: 왼쪽 ← 홈 단추, 오른쪽 주제 아이콘 + &quot;○○ 리딩&quot;.
+2) 질문 박스: &quot;Q. ○○○&quot; 인용.
+3) 카드 세 장 가로 + 자리 라벨. 누르면 모달이 떠오를 자리.
+4) 종합 해석 박스:
+   - &quot;흐름&quot; + &quot;{초반} {카드1}({정/역}) → {중반} {카드2}({정/역}) → {후반} {카드3}({정/역})&quot; 한 줄.
+   - 자리별 풀이 세 블록: 자리 라벨 / 카드 한글 이름 / 정·역 배지 / 한 줄 메시지.
+   - &quot;풀이&quot; 다섯 문장: ① 흐름 요약 ② 정·역 조합 아홉 갈래 해당 한 줄 ③ 초반·중반 이어짐 ④ 후반 강조 ⑤ 후반 자세한 메시지.
+5) 액션: &quot;카카오톡 공유&quot;(절 7) / &quot;같은 주제 다시&quot; / &quot;다른 주제&quot;.
+
+② 자리에 들어갈 정·역 조합 아홉 갈래:
+- 모두 정: 순하게 풀려 가는 시기. - 모두 역: 한 박자 쉬어 가는 결.
+- 첫 자리만 역: 시작은 막혔지만 풀려 가는 흐름. - 마지막만 역: 마지막이 엇갈리는 자리.
+- 초·중 역 후 정: 마지막에 길이 열리는 흐름. - 첫 정 후 역: 중간부터 흔들리는 자리.
+- 가운데만 역: 중간 한 번이 흔들리는 자리. - 첫·끝 역, 가운데 정: 중간만 잠시 풀리는 흐름.
+- 그 외 섞임: 정·역이 한 자리에 섞인 흐름.
+
+톤 한국어 존댓말, &quot;오늘 하루의 결을 짚어 주는 따뜻한 한 마디&quot;. 색감 검붉은 갈색 + 머스타드 골드.</code></pre>
+<figure>
+<img src="images/p043_ch2_sec4_result_basic.png" alt="결과 화면" />
+<figcaption aria-hidden="true">결과 화면</figcaption>
+</figure>
+<!-- Unit D-2: 절 4 — 카드 모달 + 데이터 분리 prompt -->
+<h3 id="카드-한-장을-더-깊이-모달-한-자리">카드 한 장을 더 깊이 — 모달
+한 자리</h3>
+<p>카드를 누르면 네 영역 풀이가 정·역 양쪽으로 펼쳐지는 모달을
+더합니다.</p>
+<pre class="prompt"><code>방금 만든 결과 화면 코드는 그대로 두고, 카드 한 장 모달 자리만 더해 주세요.
+배경 전체에 어두운 반투명 막, 그 위 가운데 박스 한 장이 떠오릅니다.
+박스 안 위에서 아래로:
+1) 누른 카드 한 장(큰 사이즈) + 자리 라벨,
+2) 카드 한글·영문 이름 + 카드 번호,
+3) 자리 힌트 한 줄, 4) 자리 메시지 한 줄, 5) 정·역 배지,
+6) 네 영역 풀 해석: 연애 / 재물 / 직업 / 관계 네 줄, 영역마다 정·역 한 줄씩.
+
+닫기: ✕ 단추 / ESC 키 / 박스 바깥 클릭.
+
+네 영역 풀 해석은 다음 자리에서 받습니다.</code></pre>
+<p>자료에는 다섯 자리가 키로 들어갑니다. 모달은 그 가운데 네 영역만 보여
+줍니다.</p>
+<pre class="prompt"><code>방금 받은 카드 모달은 그대로 두고, 카드 한 장 풀 해석 묶음을
+같은 파일 안에 더해 주세요.
+
+카드 한 장 풀 해석 묶음:
+- 카드 식별 이름(영문 소문자, 앞 자리에서 정한 이름)을 키로,
+- 다섯 자리(general / love / money / work / relation)를 자리로,
+- 자리마다 정·역 한 줄 짝으로.
+
+이번 부탁은 메이저 22장만. 바보(0)부터 세계(XXI)까지,
+한 장당 다섯 자리 × 정·역 = 열 줄, 합 220줄.
+마이너 56장은 같은 모양으로 슈트마다 한 번씩 네 번에 나누어 받습니다.
+
+톤은 한국어 존댓말, 사십~육십 자, &quot;오늘 하루의 결을 짚어 주는 따뜻한 한 마디&quot;.
+어미는 &quot;~해 보세요&quot; / &quot;~한 시기입니다&quot;.</code></pre>
+<pre class="prompt"><code>방금 받은 메이저 22장과 같은 모양으로
+{슈트 이름: 컵 / 지팡이 / 검 / 펜타클} 14장을 이어 주세요.
+다섯 자리(general / love / money / work / relation), 자리마다 정·역 한 줄 짝.
+톤은 메이저와 같은 결, 사십~육십 자, 따뜻한 한 마디 어미.</code></pre>
+<figure>
+<img src="images/p045_ch2_sec4_modal_open.png"
+alt="결과 화면에서 카드 한 장을 눌러 모달이 떠오른 상태" />
+<figcaption aria-hidden="true">결과 화면에서 카드 한 장을 눌러 모달이
+떠오른 상태</figcaption>
+</figure>
+<!-- Unit D-3: 절 4 — 마무리 -->
+<p>풀이 톤이 어긋나면 <strong>“조금 더 부드럽게”</strong> 한 마디만 보내
+주십시오.</p>
+<blockquote>
+<p><strong>[주의]</strong> AI 풀이는 참고용입니다. 의료·금융·법률 결정
+근거로 받지 마십시오.</p>
+</blockquote>
+<p>브라우저를 닫으면 결과가 사라집니다. 다시 살리는 자리는 다음
+절입니다.</p>
+<!-- Chapter 2 dogfood 역산 v3 draft (part2: 절 5~8 + 마무리) -->
+<!-- Unit E-1: 절 5 — 오늘 결과 자정까지 + 이력 5건 prompt -->
+<h2 id="기능-요구사항을-말로-설명해서-결과-저장-만들기">5. 기능
+요구사항을 말로 설명해서 결과 저장 만들기</h2>
+<p>새로고침을 누르면 카드 세 장이 사라집니다. 사이트가 오늘 결과를
+기억하지 못합니다.</p>
+<p>두 가지 약속을 더합니다. 첫째, 오늘 결과를 자정까지 둡니다. 둘째,
+최근 다섯 번 결과를 이력으로 모읍니다.</p>
+<blockquote>
+<p><strong>[비유]</strong> 칠판은 닫으면 지워집니다. 브라우저 안 작은
+노트는 닫아도 남습니다.</p>
+</blockquote>
+<p>저장은 손님 브라우저 안에만 들어갑니다. 서버로 올라가지 않습니다.</p>
+<p>저장 자리는 두 칸입니다. 오늘 한 묶음, 최근 다섯 건 이력입니다.</p>
+<pre class="prompt"><code>앞에서 받은 코드는 그대로 두시고, 결과 화면 도달 자리에서 두 가지 저장 자리를 더해 주세요.
+첫 번째(키: vibe_tarot_today): 오늘 결과 한 묶음 + 오늘 날짜(YYYY-MM-DD).
+결과 화면 진입 시 저장 날짜가 오늘과 같으면 카드 세 장과 종합풀이를 다시 보여 주고,
+다르면(자정 지난 경우) 무시하고 처음 화면으로 돌려보내 주세요.
+두 번째(키: vibe_tarot_history): 최근 다섯 건 이력. 새 결과는 맨 앞에 끼워 넣고, 여섯 번째부터 자동으로 빠집니다.
+홈 화면 위쪽에 &quot;오늘 뽑은 결과 다시 보기&quot; 단추 — 첫 번째 저장이 오늘 자리일 때만 떠오릅니다.
+새 자리 명패 #/history. 이력 다섯 건이 위에서 아래로.
+한 건마다: 주제 아이콘·제목, 뽑은 시간(오늘 14:30 · 5/8 22:10), 한 줄 질문, 카드 세 장 한글 이름·정역.
+이력이 없으면 &quot;아직 기록이 없습니다. 한 번 뽑아 보세요.&quot; 한 줄.</code></pre>
+<p>받은 코드로 메모장을 덮어쓰고 더블클릭하십시오. 같은 날에는
+새로고침을 눌러도 카드 세 장이 떠오릅니다. 자정이 지나면 저장은
+비워집니다.</p>
+<p>자정이 지난 다음 접속 시 사이트가 저장 날짜를 짚어 오늘이 아니면 그
+묶음을 무시하고 처음 화면으로 돌아갑니다. 이력 다섯 건은 그대로 남아
+#/history 자리에서 짚으실 수 있습니다.</p>
+<figure>
+<img src="images/p053_ch2_sec5_localstorage_persist.png"
+alt="새로고침 후에도 결과가 유지된 화면" />
+<figcaption aria-hidden="true">새로고침 후에도 결과가 유지된
+화면</figcaption>
+</figure>
+<figure>
+<img src="images/p056_ch2_sec5_history_5items.png"
+alt="최근 5건 이력 화면" />
+<figcaption aria-hidden="true">최근 5건 이력 화면</figcaption>
+</figure>
+<!-- Unit E-2: 절 5 — 자가 점검 -->
+<p>저장은 세 가지로 점검하실 수 있습니다.</p>
+<ul>
+<li>F5 새로고침 후 카드 세 장이 같은 자리에 떠오르는지.</li>
+<li>#/history 자리에 방금 결과가 맨 위에 올라가 있는지.</li>
+<li>자정을 넘긴 뒤 다시 열어 처음 화면으로 돌아오는지.</li>
+</ul>
+<!-- Unit F-1: 절 6 — F12 로 저장 데이터 확인 -->
+<h2 id="f12-로-저장-데이터-확인하고-삭제하기">6. F12 로 저장 데이터
+확인하고 삭제하기</h2>
+<p>브라우저 안 살펴보는 자리(개발자 도구)로 저장을 확인하실 수 있습니다.
+F12 한 번이면 새 창이 열립니다.</p>
+<blockquote>
+<p><strong>[비유]</strong> F12 는 자동차 보닛 손잡이입니다. 한 번 열면
+안쪽이 보입니다.</p>
+</blockquote>
+<p>크롬·엣지에서 네 단계입니다.</p>
+<p><strong>1. 사이트를 띄우고 F12 를 누릅니다.</strong> 새 창이
+열립니다.</p>
+<figure>
+<img src="images/p059_ch2_sec6_devtools_open.png"
+alt="F12 누른 직후 — DevTools 패널 처음 열림" />
+<figcaption aria-hidden="true">F12 누른 직후 — DevTools 패널 처음
+열림</figcaption>
+</figure>
+<p><strong>2. 위쪽 차림표에서 Application 탭으로 옮깁니다.</strong>
+왼쪽에서 Storage → Local Storage → 사이트 주소 순으로 펴십시오.</p>
+<figure>
+<img src="images/p060_ch2_sec6_application_localstorage.png"
+alt="Application → Local Storage 자리 — 키 두 줄" />
+<figcaption aria-hidden="true">Application → Local Storage 자리 — 키 두
+줄</figcaption>
+</figure>
+<p>영문 라벨은 한글로 짚으면 길을 잃지 않으십니다. Application 은
+애플리케이션, Storage 는 저장 자리, Local Storage 는 이 브라우저 안 저장
+자리입니다.</p>
+<p>두 저장 자리가 vibe_tarot_today / vibe_tarot_history 키로 나란히 떠
+있습니다.</p>
+<p><strong>3. 키 이름을 누르시면 오른쪽에 값이 펼쳐집니다.</strong></p>
+<p>JSON(제이슨, JavaScript Object Notation)은 키와 값 한 묶음 결로 저장
+자리를 적은 글자 문서입니다.</p>
+<figure>
+<img src="images/p061_ch2_sec6_localstorage_value.png"
+alt="키 클릭 후 우측 JSON 값 펼침" />
+<figcaption aria-hidden="true">키 클릭 후 우측 JSON 값 펼침</figcaption>
+</figure>
+<p><strong>4. 마우스 오른쪽 단추 → Delete 로 그 줄만 지웁니다.</strong>
+vibe_tarot_today 를 비우고 다시 열면 자정 동작과 같은 결입니다.</p>
+<blockquote>
+<p><strong>[주의]</strong> 저장은 손님 브라우저 안에만 있습니다. 여러
+손님 결과를 한 자리에 모으려면 서버와 여러 손님 자료 모으는 자리가 따로
+필요합니다.</p>
+</blockquote>
+<!-- Unit G-1: 절 7 — 카카오톡 공유 -->
+<h2 id="카카오톡-공유-기능-만들기">7. 카카오톡 공유 기능 만들기</h2>
+<p>결과 화면 단추 한 개로 카드 세 장이 카카오톡 대화창에 따라 나갑니다.
+카카오에서 키 한 줄을 받아 사이트 머리에 끼워 두어야 합니다.</p>
+<blockquote>
+<p><strong>[비유]</strong> 키 한 줄은 입구 신분증 확인입니다.</p>
+</blockquote>
+<p>키 한 줄은 다섯 단계로 받으십시오.</p>
+<p><strong>1. 카카오 디벨로퍼스 첫 자리에 들어가기.</strong> 주소창에
+developers.kakao.com 한 줄을 넣고 평소 쓰시는 카카오 계정으로
+들어가십시오.</p>
+<!-- 이미지: p063_kakao_dev_step1.png — 사장님 직접 영역 -->
+<p><strong>2. 내 애플리케이션 → 애플리케이션 추가.</strong> 위쪽
+차림표에서 내 애플리케이션 자리로 옮겨 애플리케이션 추가 단추를
+누르십시오. 앱 이름과 회사명 두 칸을 채우면 자리가 한 칸
+만들어집니다.</p>
+<!-- 이미지: p063_kakao_dev_step2.png — 사장님 직접 영역 -->
+<p><strong>3. 만든 앱 들어가기 → JavaScript 키 한 줄 복사.</strong> 방금
+만든 앱 이름을 누르고 앱 키 자리로 옮기십시오. 네 줄 가운데 JavaScript
+키 한 줄을 통째로 복사하시면 됩니다.</p>
+<!-- 이미지: p063_kakao_dev_step3.png — 사장님 직접 영역 -->
+<p><strong>4. 플랫폼 → Web → 사이트 도메인 등록.</strong> 왼쪽
+차림표에서 플랫폼 자리로 옮겨 Web 단추를 누르십시오. 배포 전에는 임시로
+http://localhost(내 컴퓨터 안 임시 주소) 한 줄, 배포 뒤에는 GitHub Pages
+주소로 갈아끼우시면 됩니다.</p>
+<!-- 이미지: p063_kakao_dev_step4.png — 사장님 직접 영역 -->
+<p><strong>5. 카카오 로그인 → 동의 항목.</strong> 공유만 쓰시면 동의
+항목 자리는 따로 손볼 자리가 없습니다. 들어가서 한 번 짚어 보고 그대로
+빠져나오시면 됩니다.</p>
+<!-- 이미지: p063_kakao_dev_step5.png — 사장님 직접 영역 -->
+<pre class="prompt"><code>앞에서 받은 코드는 그대로 두시고, 결과 화면 액션 영역의
+&quot;카카오톡으로 공유&quot; 단추가 실제로 동작하도록 한 자리만 더해 주세요.
+
+공유 문구:
+&quot;오늘의 {주제} — {자리1} {카드1}{정/역} / {자리2} {카드2}{정/역} / {자리3} {카드3}{정/역}
+VIBE TAROT 에서 직접 뽑아 보세요.&quot;
+
+카카오 SDK 가 초기화돼 있으면 Kakao.Share.sendDefault 로 공유창을 띄우고,
+닿지 않으면 navigator.share 로 같은 문구를 넘겨 주세요.
+둘 다 닿지 않으면 alert 한 번으로 위 문구를 띄워 직접 복사해 보낼 수 있게 부탁드립니다.
+
+카카오 SDK 키 자리는 YOUR_KEY 그대로 두세요.
+developers.kakao.com 에서 받은 JS 키로 직접 갈아끼우는 자리입니다.</code></pre>
+<p>받은 코드를 메모장에 붙이신 뒤 메모장 위쪽 차림표에서 편집 →
+찾기(또는 Ctrl+F)를 누르고 YOUR_KEY 한 단어를 찾아, 카카오에서 받은 JS
+키 한 줄로 갈아끼우십시오.</p>
+<p>안전망 세 자락입니다.</p>
+<ol type="1">
+<li>키가 있으면 카카오톡 공유창이 뜹니다.</li>
+<li>카카오가 닿지 않으면 휴대전화 기본 공유창이 같은 문구를
+띄웁니다.</li>
+<li>그 자리도 닿지 않으면 안내 창이 같은 문구를 띄웁니다.</li>
+</ol>
+<figure>
+<img src="images/p064_ch2_sec7_kakao_share_button.png"
+alt="결과 영역 아래에 공유 버튼이 생긴 화면" />
+<figcaption aria-hidden="true">결과 영역 아래에 공유 버튼이 생긴
+화면</figcaption>
+</figure>
+<blockquote>
+<p><strong>[주의]</strong> 카카오톡 공유창은 developers.kakao.com 에서
+키를 받아 YOUR_KEY 자리에 끼워 넣어야 열립니다.</p>
+</blockquote>
+<!-- Unit H-1: 절 8 — GitHub Pages 배포 -->
+<h2 id="github-pages-배포와-도메인-연결">8. GitHub Pages 배포와 도메인
+연결</h2>
+<p>손님이 휴대전화로 열어 보시려면 사이트가 인터넷에 자리 잡아야 합니다.
+무료로 빌려 주는 곳이 <strong>GitHub Pages</strong> 입니다.</p>
+<blockquote>
+<p><strong>[비유]</strong> GitHub Pages 는 공유 식당 한 칸입니다. 임대료
+0원.</p>
+</blockquote>
+<h3 id="github-가입-처음-오시는-분">(1) GitHub 가입 — 처음 오시는
+분</h3>
+<p>GitHub 첫 자리입니다. 이메일·비밀번호·사용자 이름 세 칸을 채워
+주십시오.</p>
+<figure>
+<img src="images/p068_ch2_sec8_github_signup.png"
+alt="Sign up for GitHub — 이메일·비밀번호·사용자 이름 세 칸" />
+<figcaption aria-hidden="true">Sign up for GitHub —
+이메일·비밀번호·사용자 이름 세 칸</figcaption>
+</figure>
+<blockquote>
+<p><strong>[실무 팁]</strong> 사용자 이름은 영문 소문자·숫자만, 짧게
+두십시오. 사이트 주소에 그대로 들어갑니다.</p>
+</blockquote>
+<h3 id="github-로그인-이미-계정이-있는-분">(2) GitHub 로그인 — 이미
+계정이 있는 분</h3>
+<p>이미 계정이 있으시면 사용자 이름과 비밀번호 두 칸으로
+로그인하십시오.</p>
+<figure>
+<img src="images/p068b_ch2_sec8_github_login.png"
+alt="Sign in to GitHub — 사용자 이름과 비밀번호 두 칸" />
+<figcaption aria-hidden="true">Sign in to GitHub — 사용자 이름과
+비밀번호 두 칸</figcaption>
+</figure>
+<h3 id="새-저장소-만들기">(3) 새 저장소 만들기</h3>
+<p>오른쪽 위 <strong>+ → New repository</strong> 를 눌러 주십시오.
+저장소 이름은 vibe-tarot, <strong>Public</strong>, 자동 생성 자리는 비워
+두십시오.</p>
+<figure>
+<img src="images/p070_ch2_sec8_github_new_repo.png"
+alt="저장소 새로 만들기 화면" />
+<figcaption aria-hidden="true">저장소 새로 만들기 화면</figcaption>
+</figure>
+<h3 id="폴더-통째로-올리기">(4) 폴더 통째로 올리기</h3>
+<p>저장소 화면 가운데 “uploading an existing file” 링크를 눌러
+주십시오.</p>
+<!-- 이미지: p072_ch2_sec8_upload_files_link.png — 사장님 직접 영역 -->
+<p>손에 한 묶음을 모으십시오.</p>
+<ul>
+<li>메모장에서 저장하신 한 파일 (절 3 에서 만드신 파일)</li>
+<li>카드 79장 PNG 가 든 images 폴더 한 개 (절 1 다운로드 길 또는 직접
+만드신 자리)</li>
+</ul>
+<p>두 자리를 한 번에 끌어다 놓고 “Commit changes” 단추를 눌러
+주십시오.</p>
+<!-- 이미지: p072b_ch2_sec8_drag_and_commit.png — 사장님 직접 영역 -->
+<h3 id="pages-활성화">(5) Pages 활성화</h3>
+<p>저장소 화면을 새로고침하시고 <strong>Settings → Pages</strong> 로
+들어가 주십시오. <strong>Source</strong> 는 Deploy from a branch 로
+두십시오. <strong>Branch</strong> 는 main / (root) 두 칸을 짝으로 고른
+뒤 <strong>Save</strong> 입니다.</p>
+<figure>
+<img src="images/p073_ch2_sec8_pages_settings.png"
+alt="Pages 설정 화면" />
+<figcaption aria-hidden="true">Pages 설정 화면</figcaption>
+</figure>
+<h3 id="주소-받기">(6) 주소 받기</h3>
+<p>1~2분 기다리시고 같은 화면을 다시 열어 보십시오. “Your site is live
+at https://{사용자이름}.github.io/vibe-tarot/” 한 줄이 떠오릅니다.</p>
+<figure>
+<img src="images/p074_ch2_sec8_pages_url_appear.png"
+alt="Pages URL 떠오른 화면" />
+<figcaption aria-hidden="true">Pages URL 떠오른 화면</figcaption>
+</figure>
+<h3 id="모바일에서-확인">(7) 모바일에서 확인</h3>
+<p>주소 한 줄을 휴대전화 주소창에 넣으십시오. 사이트가 떠오르면 배포
+끝입니다. 화면이 깨지면 파일 이름 대소문자를 짚으십시오.</p>
+<p>자주 막히는 자리는 세 군데입니다. Pages 주소가 1~2분 지나도 빈 자리면
+Settings → Pages 자리를 다시 여십시오. Branch 자리가 main / (root) 로
+박혔는지 한 번 더 짚으십시오.</p>
+<p>카드 그림이 안 떠오르면 images 폴더가 같이 올라갔는지 짚으십시오.
+개발자 도구 Console 자리에 404 가 떠오르면 파일 이름 대소문자 차이를
+짚으십시오.</p>
+<figure>
+<img src="images/p075_ch2_sec8_deployed_mobile.png"
+alt="배포된 사이트를 모바일에서 연 화면" />
+<figcaption aria-hidden="true">배포된 사이트를 모바일에서 연
+화면</figcaption>
+</figure>
+<blockquote>
+<p><strong>[확인]</strong> https://{사용자이름}.github.io/vibe-tarot/ 를
+휴대전화로 열어 사이트가 떠오르면 통과입니다. <strong>[팁]</strong>
+다음에 한 줄 고치실 때는 저장소 화면에서 파일을 누르고 연필 아이콘으로
+손보시면 됩니다.</p>
+</blockquote>
+<hr />
+<!-- Unit Z-1: 챕터 마무리 -->
+<hr />
+<!-- p82 — 부록 A: 자산 저장소 다시 보기 -->
+<h2 id="부록-a.-다음-단계-안내">부록 A. 다음 단계 안내</h2>
+<h3 id="a-1.-자산-저장소-다시-보기">A-1. 자산 저장소 다시 보기</h3>
+<p>자산 저장소 자리는 https://github.com/cbr1024/vibe-tarot-assets
+입니다. images 폴더에 카드 79장 PNG 가 들어 있고, prompts 묶음 한 자리에
+ChatGPT 부탁말 10 묶음이 모여 있습니다. 책에서 사용한 그대로의 자료가
+모여 있는 자리입니다.</p>
+<!-- 이미지: p082_appendix_a_assets_repo.png — 사장님 직접 영역 (자산 저장소 GitHub 화면 캡처). 캡션: "https://github.com/cbr1024/vibe-tarot-assets — 다운로드 길 시작 자리". -->
+<!-- p83 — 부록 A: 참고 사이트 영감 -->
+<h3 id="a-2.-참고-사이트-영감">A-2. 참고 사이트 영감</h3>
+<p>책의 디자인·기능 영감 출처는
+https://tarotpark.com/m/tarot/category.php 한 자리입니다. 빈티지
+베이지·갈색 라인 톤, 78장 한 벌, 모바일 한 손 흐름이 한 자리에 모여 있는
+사이트입니다. 캡처는 박지 않고 영감 안내 한 줄만 두었습니다.</p>
+<!-- p84 — 부록 A: 다음 책 예고 + 마침 -->
+<h3 id="a-3.-마침">A-3. 마침</h3>
+<p>여기까지 절 1 부터 절 8 까지 한 손에 닿으셨습니다. 다음 책에서는 카드
+한 벌 너머 — 손님 한 분 한 분 결과를 서버 한 자리에 모으는 길을 다룰
+자리입니다. 같이 만들어 보겠습니다.</p>
+</body>
+</html>
